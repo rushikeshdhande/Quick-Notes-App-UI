@@ -4,7 +4,7 @@ let editingNoteId = null
 function loadNotes() {
   const savedNotes = localStorage.getItem('quickNotes')
   return savedNotes ? JSON.parse(savedNotes) : []
-}
+} 
 
 function saveNote(event) {
   event.preventDefault()
